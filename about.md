@@ -1,5 +1,20 @@
-# Another Exercise
-This exercise was to create a new page, about.md then add a link to [index.md](https://lawtlee.github.io/github-sites-test/)
+# About
 
-This will be crazy especially when you see that you visited this page at the link: https://lawtlee.github.io/github-sites-test/about.html\
-The interesting part of this is that this was created using Jekyll which converts mardown files into html files.
+## Project
+
+{{ site.description }}
+
+## Funders
+
+We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+
+## Cite us
+
+You can cite the project as:
+
+> *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
+
+## Contact us
+
+- Email: [{{ site.email }}](mailto:{{ site.email }})
+- Twitter: [{{ site.twitter }}]({{ site.twitter }})
