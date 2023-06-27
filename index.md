@@ -1,4 +1,4 @@
-{% includes navigation.html %}
+{% include navigation.html %}
 
 # Building Websites in GitHub
 
