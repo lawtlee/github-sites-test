@@ -13,3 +13,6 @@ int x= 5 + 6;
 cout << "Hello World!" << x << endl;
 }
 ```
+
+### This is part of another exercise
+The about page that I just created is linked [here](https://lawtlee.github.io/github-sites-test/about.html
