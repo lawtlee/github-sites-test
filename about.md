@@ -1,20 +1,24 @@
-# About
+ ---
+ layout: page
+ title: About
+ ---
 
-## Project
+ ## Project
 
-{{ site.description }}
+ {{ site.description }}
 
-## Funders
+ ## Funders
+ We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
 
-We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+ ## Team
 
-## Cite us
+ The following people are members of our research team:
+ {% for team_member in site.team_members %}
+ - {{ team_member.name }}, role: {{ team_member.role }}
+ {% endfor %}
 
-You can cite the project as:
+ ## Cite us
 
->    *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
+ You can cite the project as:
 
-## Contact us
-
-- Email: [{{ site.email }}](mailto:{{ site.email }})
-- Twitter: [{{ site.twitter }}]({{ site.twitter }})
+ >    *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
