@@ -15,4 +15,4 @@ cout << "Hello World!" << x << endl;
 ```
 
 ### This is part of another exercise
-The about page that I just created is linked [here](https://lawtlee.github.io/github-sites-test/about.html
+The about page that I just created is linked [here](https://lawtlee.github.io/github-sites-test/about.html)
