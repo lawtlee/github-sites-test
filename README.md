@@ -1,2 +1,2 @@
-# github-sites-test
-A repository to test out Jekyll and Github
+# Jekyll-Github Repo
+A respository created in order to learn how to create websites using Jekyll and github.
