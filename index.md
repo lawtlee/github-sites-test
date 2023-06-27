@@ -1,18 +1,14 @@
-# Building Websites in github
+---
+lesson-example: "https://carpentries.github.io/lesson-example/"
+---
 
-## Section 2
-This is part of another exercise in the carpentries workshop.\
-This time I'm going to be adding a code block because i think that's cool
+# Building Websites in GitHub
 
-```cpp
-#include <iostream>
-using namepsace std;
-int main() {
-  int y = some_MACRO_Reference;
-int x= 5 + 6;
-cout << "Hello World!" << x << endl;
-}
-```
+## Description
+{{ site.description }}
 
-### This is part of another exercise
-The about page that I just created is linked [here](https://lawtlee.github.io/github-sites-test/about.html)
+More details about the project are available from the [About page](about).
+
+See some [examples of our work]({{ page.lesson-example }}).
+
+Have any questions about what we do? [We'd love to hear from you!](mailto:{{ site.email }})
