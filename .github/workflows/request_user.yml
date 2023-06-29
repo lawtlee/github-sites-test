@@ -15,7 +15,7 @@ jobs:
             const githubOwner = context.repo.owner;
             const repo = context.repo.repo;
             const pullRequestNumber = context.payload.pull_request.number;
-            const requestedUser = lawtlee;
+            const requestedUser = 'lawtlee';
 
             const response = await github.issues.addAssignees({
               owner: githubOwner,
