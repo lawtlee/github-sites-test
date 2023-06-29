@@ -1,0 +1,27 @@
+name: Request User on Pull Request
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  request_user:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request User
+        uses: actions/github-script@v5
+        with:
+          script: |
+            const github = context.repo.owner;
+            const repo = context.repo.repo;
+            const pullRequestNumber = context.payload.pull_request.number;
+            const requestedUser = lawtlee;
+
+            const response = await github.issues.addAssignees({
+              owner: github,
+              repo: repo,
+              issue_number: pullRequestNumber,
+              assignees: [requestedUser]
+            });
+
+            console.log(`User ${requestedUser} requested for pull request #${pullRequestNumber}`);
