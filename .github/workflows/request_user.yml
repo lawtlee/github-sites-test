@@ -12,13 +12,13 @@ jobs:
         uses: actions/github-script@v5
         with:
           script: |
-            const github = context.repo.owner;
+            const githubOwner = context.repo.owner;
             const repo = context.repo.repo;
             const pullRequestNumber = context.payload.pull_request.number;
             const requestedUser = lawtlee;
 
             const response = await github.issues.addAssignees({
-              owner: github,
+              owner: githubOwner,
               repo: repo,
               issue_number: pullRequestNumber,
               assignees: [requestedUser]
