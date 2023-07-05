@@ -8,10 +8,10 @@ title: Home
 ## Description
 {{ site.description }}
 {% assign lead = site.team_members | where:"role", "project lead" | first %}
-The project is led by {{ lead.name }}.
+This project was developed by the Carpentries team and now used by me Lawrence Lee.
 [See our full team](about#team)
 
-Have any questions about what we do? [We'd love to hear from you!](mailto:{{ site.email }})
+Want to change the design? [I'd love to hear your ideas!](mailto:{{ site.email }})
 
 ## Blog Posts
 

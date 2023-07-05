@@ -3,11 +3,13 @@ layout: default
 title: About
 ---
 
-# Our Goal and Team
+# My Goal and Team
 
 ## Project
 
 {{ site.description }}
+
+The following items are made from the guide.
 
 ## Funders
 We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
