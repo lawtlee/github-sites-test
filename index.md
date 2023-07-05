@@ -3,12 +3,18 @@ layout: default
 title: Home
 ---
 
-# Testing
+# Building Websites in GitHub
 
-For some odd reason, in the main branch, Jekyll liquid is having problems processing the _layouts and _includes. Leading to issues.
+## Description
+{{ site.description }}
+{% assign lead = site.team_members | where:"role", "project lead" | first %}
+The project is led by {{ lead.name }}.
+[See our full team](about#team)
 
-Using Liquid by itself works but it shouldn't need to be re-copied each time.
+Have any questions about what we do? [We'd love to hear from you!](mailto:{{ site.email }})
 
-## Another Thing
+## Blog Posts
 
-This [link](https://lawtlee.github.io/github-sites-test/about.html) will take you to the about page
+{% for post in site.blogposts %}
+- {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url | relative_url }})
+{% endfor %}
