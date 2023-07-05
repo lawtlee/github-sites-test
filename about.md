@@ -2,6 +2,7 @@
 layout: default
 title: About
 ---
+# Our Goal and Team
 
  ## Project
 
