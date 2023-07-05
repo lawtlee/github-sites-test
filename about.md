@@ -3,8 +3,22 @@ layout: default
 title: About
 ---
 
-# New About
+ ## Project
 
-The previous version on the main branch has issues with loading the front-framework.
+ {{ site.description }}
 
-This new version is being created in order to test that feature and debug the issues.
+ ## Funders
+ We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+
+ ## Team
+
+ The following people are members of our research team:
+ {% for team_member in site.team_members %}
+ - {{ team_member.name }}, role: {{ team_member.role }}
+ {% endfor %}
+
+ ## Cite us
+
+ You can cite the project as:
+
+ >    *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
