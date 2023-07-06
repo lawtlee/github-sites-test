@@ -15,10 +15,20 @@ jobs:
         run: |
           git format-patch main -1 HEAD
       
-      - name: send email
+      - name: Set up Git
+        run: |
+          git config user.name lawtlee
+          git config user.email lawsac2947@gmail.com
+      
+      - name: Install send-email
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git-email
+
+      - name: Send Email
         run: |
           patch=$(ls | grep *.patch)
-          git send-email --to=lawsac2947@gmail.com --from=lawsac2947@gmail.com
+          git send-email --to=lawsac2947@gmail.com $(patch)
 
       - name: Delete Patch
         run: |
