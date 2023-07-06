@@ -1,0 +1,25 @@
+name: Request User on Pull Request
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  email_patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      
+      - name: Create Patch
+        run: |
+          git format-patch main -1 HEAD
+      
+      - name: send email
+        run: |
+          patch=$(ls | grep *.patch)
+          git send-email --to=lawsac2947@gmail.com --from=lawsac2947@gmail.com
+
+      - name: Delete Patch
+        run: |
+          rm $(ls | grep *.patch)
